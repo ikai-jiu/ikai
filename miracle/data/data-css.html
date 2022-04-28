@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板菜单</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        #kai-iu {
+            background-color: aqua;
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0%;
+        }
+        
+        #kai-iu-1 {
+            padding: 10px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+        .kai-mob {
+            height: 700px;
+            width: 13%;
+            background-color: darkgray;
+            /* display: block; */
+            float: left;
+            flex-direction: column;
+        }
+        
+        .kai-mob span {
+            font-size: 20px;
+            font-weight: revert;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .kai-mob span:hover {
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-kai">
+        <div id="kai-iu">
+            <div id="kai-iu-1">你好</div>
+        </div>
+        <div class="kai-mob">
+            <span>模板1</span>
+            <span>模板2</span>
+        </div>
+        <div class="kai-oi">
+            <img src="" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
