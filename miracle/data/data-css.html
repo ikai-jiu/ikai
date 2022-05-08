@@ -29,6 +29,11 @@
         }
         
         .kai-mob {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .kai-mob>ul {
             height: 700px;
             width: 13%;
             background-color: darkgray;
@@ -37,34 +42,58 @@
             flex-direction: column;
         }
         
-        .kai-mob span {
+        .kai-mob>ul>li {
             font-size: 20px;
             font-weight: revert;
             display: flex;
             justify-content: center;
             cursor: pointer;
+            border-bottom: 2px solid #000;
         }
         
-        .kai-mob span:hover {
+        .kai-mob>ul>li>a {
+            width: 100%;
+            text-decoration: none;
+            color: aliceblue;
+        }
+        
+        .kai-mob>ul>li:last-child {
+            border-top: none;
+        }
+        
+        .kai-mob>ul>li>a:focus {
             background-color: black;
             color: aliceblue;
+        }
+        
+        .fram {
+            float: left;
+            width: 86%;
+            height: 100%;
         }
     </style>
 </head>
 
 <body>
+
     <div class="my-kai">
         <div id="kai-iu">
             <div id="kai-iu-1">你好</div>
         </div>
         <div class="kai-mob">
-            <span>模板1</span>
-            <span>模板2</span>
+            <ul>
+                <li><a class="active" href="data-amgei.html" target="css-3">模版1</a></li>
+                <li><a href="../刘-4-12.html" target="css-3">模版2</a></li>
+                <li><a href="">代码库</a></li>
+            </ul>
+            <div class="frame">
+                <iframe name="css-3" src="./img/img-1.jpg" frameborder="0" width="87%" height="700px"></iframe>
+            </div>
         </div>
         <div class="kai-oi">
-            <img src="" alt="">
         </div>
     </div>
+
 </body>
 
 </html>
